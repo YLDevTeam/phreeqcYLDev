@@ -1,6 +1,6 @@
 {
   "type": "module",
-  "name": "phreeqcYLDev",
+  "name": "phreeqc_yldev",
   "version": "0.1.0",
   "description": "PHREEQC (IPhreeqc) compilé en WebAssembly pour le navigateur et Node.js",
   "main": "./src/index.js",
