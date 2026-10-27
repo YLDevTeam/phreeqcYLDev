@@ -90,21 +90,3 @@ export class PhreeqC {
 export function loadDefaultDatabase(url?: string): Promise<string>;
 
 export default PhreeqC;
-
-Déclaration dans package.json
-
-Placez "types" en premier dans exports, sinon TypeScript l’ignore :
-
-{
-  "type": "module",
-  "main": "./src/index.js",
-  "types": "./src/index.d.ts",
-  "exports": {
-    ".": {
-      "types": "./src/index.d.ts",
-      "default": "./src/index.js"
-    },
-    "./dist/*": "./dist/*"
-  },
-  "files": ["src", "dist", "README.md", "LICENSE"]
-}
